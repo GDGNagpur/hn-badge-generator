@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <title>DevFest India Profile Badge Generator</title>
+  <title>hacknagpur. Badge Generator</title>
   <meta
     name="description"
     content="DevFest India Profile Badge Generator"
@@ -47,11 +47,15 @@
   />
   <meta name="twitter:tags" content="devfest, devfestindia, gdg, wtm" />
   <!-- Social Meta -->
-  <link
+  <!-- <link
     crossorigin="anonymous"
     href="https://fonts.googleapis.com/icon?family=Google+Sans:400&display=swap"
     rel="stylesheet"
-  />
+  /> -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" 
+  rel="stylesheet">
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script
     async
@@ -74,16 +78,16 @@
         0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
       --shadow-elevation-2: 0 3px 5px -1px rgba(0, 0, 0, 0.2),
         0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
-      --button-color: #0005df;
-      --button-color-hover: #0005df;
+      --button-color: #1d61ff;
+      --button-color-hover: #1d61ff;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
     }
 
     body {
-      background: #e0e0e0;
+      background: #272121;
       margin: 0;
-      font-family: "Google Sans", sans-serif;
+      font-family: 'Poppins', sans-serif;
       display: flex;
       flex-direction: column;
       color: #4a4a4a;
@@ -91,7 +95,7 @@
     }
 
     header {
-      background-color: #fff;
+      background-color: #272121;
       height: 76px;
       display: flex;
       align-items: center;
@@ -111,7 +115,7 @@
       padding: 24px;
       width: 40%;
       max-width: 420px;
-      background-color: #f5f5f5;
+      background-color: #272121;
       box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2),
         0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12);
     }
@@ -264,9 +268,9 @@
     .border-btn {
       text-transform: capitalize;
       border-radius: 5px;
-      border: 1px solid rgb(224, 224, 224);
-      color: rgb(0, 5, 223);
-      background-color: white;
+      
+      color: #fff;
+      background-color: #1d61ff;
       text-decoration: none;
       font-size: 18px;
       padding: 8px 20px;
@@ -274,6 +278,7 @@
 
     .border-btn:hover {
       background-color: #f5f5f5;
+      color: #1d61ff;
     }
 
     @media screen and (max-width: 860px) {
@@ -309,6 +314,7 @@
 
       .title {
         padding-bottom: 5px;
+        color: #02fe89;
       }
     }
   </style>
@@ -316,12 +322,11 @@
   <header>
     <div class="header-flex-wrapper">
         <div class="title">
-          DevFest India Badge Generator
+          <h1 style="color: #02f389;"><b>hack<span  style="color: #fff;">nagpur</span>. </b> Badge Generator</h1> 
         </div>
         <div>
           <ul class="list-unstyled  badge-list">
-            <li><a href="https://devfestindia.com" target="_blank" class="border-btn" rel = "noreferrer">Website</a></li>
-            <li><a href="http://feedback.devfestindia.com" target="_blank" class="blue-btn" rel = "noreferrer">Feedback</a></li>
+            <li><a href="https://hacknagpur.tech" target="_blank" class="border-btn" rel = "noreferrer">Website</a></li>
             <!-- <li><a href="https://devfestindia.com/registration" target="_blank" class="blue-btn" rel = "noreferrer">Registration</a></li> -->
           </ul>
         </div>
@@ -478,7 +483,7 @@
       } else {
         ctx.canvas.width = 500;
         ctx.canvas.height = 500;
-        ctx.fillStyle = "#0005DF";
+        ctx.fillStyle = "#02f389";
         ctx.fillRect(0, 0, canvas.width, canvas.height);
       }
 
